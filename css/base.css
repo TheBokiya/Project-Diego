@@ -225,24 +225,33 @@ img.scale-with-grid {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
     font-weight: 300;
-    color: white;
-    border: 2px solid #707070;
+    color: #707070;
+    border: 1px solid #707070;
     border-radius: 3px;
-    background: #707070;
+    background: none;
     display: inline-block;
     cursor: pointer;
     margin-bottom: 20px;
     padding: 6px 16px;
+    /*transition cross-browser stuff*/
+    -webkit-transition: 0.3s linear;
+    /* Safari 3.2+, Chrome */
+    -moz-transition: 0.3s linear;
+    /* Firefox 4-15 */
+    -o-transition: 0.3s linear;
+    /* Opera 10.5–12.00 */
+    transition: 0.3s linear;
+    /* Firefox 16+, Opera 12.50+ */
 }
 .button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
     color: white;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 3px;
     background: #707070;
 }
 .button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
     color: #707070;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 3px;
     background: none;
 }
@@ -268,7 +277,7 @@ fieldset {
     margin-bottom: 20px;
 }
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
-    padding: 6px 8px;
+    padding: 6px 38px;
     font: 18px"Source Sans Pro", sans-serif;
     font-weight: 300;
     color: #707070;
@@ -278,7 +287,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea, selec
     display: block;
     margin-bottom: 20px;
     background: none;
-    border: 2px solid #707070;
+    border: 1px solid #707070;
     border-radius: 3px;
 }
 select {
