@@ -7,7 +7,7 @@ body {
     font-size: 14px;
     font-weight: 300;
 }
-p, h1, h2, h3, span, a {
+p, h1, h2, h3, h4, span, a {
     font-family: 'Source Sans Pro', sans-serif !important;
 }
 h1 {
@@ -17,8 +17,23 @@ h1 {
     letter-spacing: 20px;
     color: #707070;
     margin-bottom: 50px;
-    background: none;
-    display: inline !important;
+}
+h2 {
+    font-size: 54px !important;
+    font-weight: 200;
+    letter-spacing: 20px;
+    color: #707070;
+    display: inline;
+    margin-top: -15px;
+}
+a.account {
+    font-size: 18px !important;
+    font-weight: 300;
+    color: #707070;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 30px;
 }
 .centered {
     text-align: center;
@@ -41,5 +56,34 @@ h1 {
 }
 
 .header {
-    margin: 20px 20px;
+    margin: 25px 25px;
+}
+
+.search-box {
+    background: url(../img/icons/search-24.png) left no-repeat !important;
+    background-position: 5px 5px !important;
+    width: 200px !important;
+    height: auto;
+    float: right;
+    margin-right: 25px !important;
+}
+
+/*ANIMATION==========================================================*/
+.sliding-middle-out {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: #707070;
 }
