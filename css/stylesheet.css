@@ -17,9 +17,11 @@ h1 {
     letter-spacing: 20px;
     color: #707070;
     margin-bottom: 50px;
-    text-align: center;
+    background: none;
+    display: inline !important;
 }
 .centered {
+    text-align: center;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -36,4 +38,8 @@ h1 {
 .username-input {
 	background: url(../img/icons/username-24.png) left no-repeat !important;
 	background-position: 5px 5px !important;
+}
+
+.header {
+    margin: 20px 20px;
 }
