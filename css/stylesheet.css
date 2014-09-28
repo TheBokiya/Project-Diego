@@ -87,3 +87,25 @@ a.account {
     width: 100%;
     background: #707070;
 }
+
+/*CONTAINER===========================================================*/
+.content {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+div.container {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    width: 630px;
+    height: 300px;
+}
+.left-tile {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.right-tile {
+    margin-bottom: 10px;
+}
