@@ -10,6 +10,24 @@ body {
 p, h1, h2, h3, h4, span, a {
     font-family: 'Source Sans Pro', sans-serif !important;
 }
+span.date {
+    float: left;
+    width: 100px;
+    margin-right: 70px;
+    font-size: 12pt !important;
+    color: #707070;
+}
+.unread {
+    font-weight: 400 !important;
+}
+.unread-csv {
+    border-color: #34AADC !important;
+    color: #34AADC !important;
+}
+.unread-csv:hover {
+    color: white !important;
+    background: #34AADC !important;
+}
 h1 {
     margin-top: 0;
     font-size: 62px !important;
@@ -35,6 +53,60 @@ a.account {
     cursor: pointer;
     line-height: 30px;
 }
+a.tile-title {
+    font-size: 18px !important;
+    font-weight: 300;
+    color: #707070;
+    text-decoration: none;
+}
+a.tile-line {
+    font-size: 12pt !important;
+    font-weight: 300;
+    color: #707070;
+    text-decoration: none;
+}
+a.tile-link {
+    font-size: 12pt !important;
+    width: 50px;
+    text-align: center;
+    font-weight: 300;
+    border: 1px solid #707070;
+    color: #707070;
+    border-radius: 4px;
+    background: none;
+    float: right;
+    padding: 0 5px;
+    /*transition cross-browser stuff*/
+    -webkit-transition: 0.3s linear;
+    /* Safari 3.2+, Chrome */
+    -moz-transition: 0.3s linear;
+    /* Firefox 4-15 */
+    -o-transition: 0.3s linear;
+    /* Opera 10.5–12.00 */
+    transition: 0.3s linear;
+    /* Firefox 16+, Opera 12.50+ */
+}
+a.tile-link:hover {
+    color: white;
+    background: #707070;
+}
+a.pagination {
+    font-size: 12px !important;
+    margin: 0 10px;
+}
+div.notification {
+    line-height: 15px;
+    position: absolute;
+    color: white;
+    top: 15px;
+    left: 155px;
+    font-size: 8pt !important;
+    background: #34AADC;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    border-radius: 2px;
+}
 .centered {
     text-align: center;
     position: fixed;
@@ -44,21 +116,17 @@ a.account {
     -ms-transform: translate(-50%, -60%);
     transform: translate(-50%, -60%);
 }
-
 .password-input {
-	background: url(../img/icons/password-24.png) left no-repeat !important;
-	background-position: 5px 5px !important;
+    background: url(../img/icons/password-24.png) left no-repeat !important;
+    background-position: 5px 5px !important;
 }
-
 .username-input {
-	background: url(../img/icons/username-24.png) left no-repeat !important;
-	background-position: 5px 5px !important;
+    background: url(../img/icons/username-24.png) left no-repeat !important;
+    background-position: 5px 5px !important;
 }
-
 .header {
     margin: 25px 25px;
 }
-
 .search-box {
     background: url(../img/icons/search-24.png) left no-repeat !important;
     background-position: 5px 5px !important;
@@ -67,8 +135,8 @@ a.account {
     float: right;
     margin-right: 25px !important;
 }
-
 /*ANIMATION==========================================================*/
+
 .sliding-middle-out {
     display: inline-block;
     position: relative;
@@ -87,8 +155,8 @@ a.account {
     width: 100%;
     background: #707070;
 }
-
 /*CONTAINER===========================================================*/
+
 .content {
     margin-top: 50px;
     margin-left: 25px;
@@ -97,15 +165,40 @@ a.account {
 }
 div.container {
     display: inline-block;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     width: 630px;
     height: 300px;
+    overflow: hidden;
 }
 .left-tile {
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .right-tile {
+    margin-bottom: 20px;
+}
+.tile-header {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.tile-content {
+    margin: 0 20px;
+    height: 200px;
+    border-bottom: 1px solid white;
+}
+.tile-footer {
+    margin-top: 10px;
+    text-align: center;
+}
+.tile-content-line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 8px 0;
+}
+.last {
+    border-bottom: none !important;
 }

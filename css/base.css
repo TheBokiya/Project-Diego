@@ -160,7 +160,7 @@ hr {
 
 a, a:visited {
     color: #333;
-    text-decoration: underline;
+    text-decoration: none;
     outline: 0;
 }
 a:hover, a:focus {
